@@ -1,0 +1,36 @@
+{
+  "name": "mern-backend-scaffold",
+  "version": "1.0.0",
+  "description": "Barebones express api with mongo and mongoose intergration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "startdev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codingkiwi/mern-backend-scaffold.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codingkiwi/mern-backend-scaffold/issues"
+  },
+  "homepage": "https://github.com/codingkiwi/mern-backend-scaffold#readme",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.6.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.6",
+    "mongoose-unique-validator": "^2.0.3",
+    "multer": "^1.4.2",
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
