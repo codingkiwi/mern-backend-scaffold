@@ -5,9 +5,10 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
+const usersRoutes = require('./routes/users-routes');
 const HttpError = require('./models/http-error');
 
-const app = express();
+const app = express()
 
 app.use(bodyParser.json());
 
@@ -21,9 +22,7 @@ app.use((req, res, next) => {
 	next();
 });
 
-app.get('/api', (req, res, next) => {
-    res.json({message:"request recieved"});
-})
+app.use('/api/users', usersRoutes);
 
 //if no route exists
 app.use((req, res, next) => {
